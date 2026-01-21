@@ -10,3 +10,11 @@ class Library:
             "author": author,
             "borrowed": False
         }
+        def borrow_book(self, book_id):
+        if self.books[book_id]["borrowed"]:
+            raise ValueError("Book already borrowed")
+        self.books[book_id]["borrowed"] = True
+
+    def return_book(self, book_id):
+        self.books[book_id]["borrowed"] = False
+
