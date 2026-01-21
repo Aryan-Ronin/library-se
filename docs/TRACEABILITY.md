@@ -5,3 +5,5 @@
 | 2 | Borrow book | borrow_book() | test_borrow_available_book | v0.2 |
 | 2 | Prevent double borrow | borrow_book() | test_borrow_unavailable_book_raises_error | v0.2 |
 | 2 | Return book | return_book() | test_return_book_updates_status | v0.2 |
+| 3 | Generate report | generate_report() | test_report_contains_header | v0.3 |
+| 3 | Report entries | generate_report() | test_report_contains_book_entry | v0.3 |
