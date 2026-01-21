@@ -48,6 +48,8 @@ class TestLibrarySprint2(unittest.TestCase):
         lib.add_book("B1", "Python", "Guido")
         report = lib.generate_report()
         self.assertIn("B1", report)
+        
+        
 
 
 
