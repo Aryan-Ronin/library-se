@@ -10,19 +10,3 @@ class Library:
             "author": author,
             "borrowed": False
         }
-        def borrow_book(self, book_id):
-        if self.books[book_id]["borrowed"]:
-            raise ValueError("Book already borrowed")
-        self.books[book_id]["borrowed"] = True
-
-    def return_book(self, book_id):
-        self.books[book_id]["borrowed"] = False
-        
-   def generate_report(self):
-        report = "ID | Title | Author | Status\n"
-        for bid, b in self.books.items():
-            status = "Borrowed" if b["borrowed"] else "Available"
-            report += f"{bid} | {b['title']} | {b['author']} | {status}\n"
-        return report
-
-
